@@ -25,6 +25,9 @@ st.markdown("""
 }
 .hero h1 {color:white;}
 .hero p {color:#eaf3ff;}
+.stMarkdown {
+    color: #222222 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
