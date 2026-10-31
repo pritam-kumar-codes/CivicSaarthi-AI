@@ -166,7 +166,9 @@ was found and recommend checking official government sources.
 """
 
     
-    client = genai.Client(api_key=api_key)
+    client = genai.Client(
+    api_key=st.secrets["GEMINI_API_KEY"] if "GEMINI_API_KEY" in st.secrets else api_key
+)
 
     models_to_try = [
         "gemini-3.5-flash",
