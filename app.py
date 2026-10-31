@@ -38,10 +38,7 @@ st.markdown("""
 
 with st.sidebar:
     st.header("⚙️ Settings")
-    api_key = st.text_input(
-        "Gemini API Key",
-        type="password"
-    )
+    api_key = st.secrets.get("GEMINI_API_KEY", "")
     language = st.sidebar.selectbox(
     "🌐 Select Response Language",
     ["Auto-detect", "English", "Hindi", "Hinglish"]
