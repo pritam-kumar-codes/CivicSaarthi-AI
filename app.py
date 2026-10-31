@@ -169,7 +169,6 @@ was found and recommend checking official government sources.
 
     models_to_try = [
         "gemini-3.5-flash",
-        "gemini-flash-latest"
     ]
 
     answer = None
