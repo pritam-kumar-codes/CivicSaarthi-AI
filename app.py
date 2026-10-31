@@ -261,6 +261,7 @@ if question:
             documents = read_pdfs(uploaded_data)
 
             with st.spinner("CivicSaarthi is thinking..."):
+                st.info("Question submitted. AI function is running...")
                 try:
                     answer = ask_ai(
                         question,
