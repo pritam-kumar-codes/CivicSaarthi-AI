@@ -186,6 +186,7 @@ was found and recommend checking official government sources.
                 break
 
             except Exception as e:
+                error_text = str(e)
                 st.error(f"Gemini API Error: {error_text}")
 
                 if "503" in error_text or "UNAVAILABLE" in error_text:
