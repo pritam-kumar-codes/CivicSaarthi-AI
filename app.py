@@ -276,7 +276,8 @@ if question:
                 except Exception as e:
                     answer = f"Error: {e}"
 
-        st.markdown(answer)
+        with st.container(border=True):
+            st.markdown(answer)
 
     st.session_state.messages.append({
         "role": "assistant",
